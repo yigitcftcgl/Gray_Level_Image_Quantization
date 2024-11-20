@@ -1,7 +1,7 @@
 # Gray_Level_Image_Quantization
 Image quantization and analysis for grayscale images. This project involves reducing grayscale images from 8-bit to lower bit depths (7-bit to 1-bit), comparing the images rescaled to the 0-255 range, and evaluating differences using MAE and PSNR metrics. Includes visualization of quantized and rescaled images, along with analysis results.
 
-**Comments**
+# Comments
 There is not much difference between the quantized image and the image redrawn to the range of 0 - 255 at the 7 bit level. At least it can be said that there is no difference that can be perceived by the eye.
 When we go down to 6-bit, 5-bit and lower levels, the visual differences between the quantized and the 0 - 255 images start to become more noticeable. For example, at 6-bit and 5-bit, slight loss of detail and some visible artifacts can be observed, which shows the decrease in the number of intensity levels.
 When you reach 4-bit, 3-bit and especially 2-bit and 1-bit, the differences become much more noticeable. When we look at the researches in these levels range, we see that the details and sharp details originating from square blocks are lost. At these low bit depths, due to the very limited number of intensity levels (for example, 1-bit has only two levels), significant loss of detail and blocky artifacts can be seen.
